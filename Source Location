@@ -1,0 +1,6 @@
+let
+    Source = Excel.CurrentWorkbook(),
+    _SOURCEFILE = Source{[Name="_SOURCEFILE"]}[Content],
+    Column1 = _SOURCEFILE{0}[Column1]
+in
+    Column1
