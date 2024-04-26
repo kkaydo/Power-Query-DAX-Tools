@@ -1,0 +1,3 @@
+= Table.ReplaceValue(#"Ark1", each [Column1], 
+  each if [Column2] = "Forhold (uønsket)" and [Column1] = "Uønsket HMS-hendelse" then "Forhold" 
+        else [Column1],Replacer.ReplaceValue,{"Column1"}) 
